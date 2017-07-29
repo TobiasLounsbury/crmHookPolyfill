@@ -1,9 +1,7 @@
 (function(angular, $, _) {
   angular
-    .module('crmHookPolyfill', [
-      'crmUtil'
-    ]);
-  angular.module('crmUtil').factory('crmHook', [
+    .module('crmHookPolyfill', CRM.angRequires('crmHookPolyfill'));
+  angular.module('crmHookPolyfill').factory('crmHook', [
     function($q) {
       var listeners = {};
       return {

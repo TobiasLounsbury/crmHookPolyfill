@@ -120,6 +120,8 @@ function angularhookpolyfill_civicrm_angularModules(&$angularModules) {
     'css' => array (),
     'partials' => array (),
     'settings' => array (),
+    'basePages' => array('*'),
+    'requires' => array(),
     'volunteer' => true
   );
 }
